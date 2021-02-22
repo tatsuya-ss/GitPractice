@@ -18,6 +18,9 @@ class ViewController: UIViewController {
         label.text = name
     }
 
+    @IBAction func changeButton(_ sender: Any) {
+        name = "sakamoto"
+    }
     
 
 }
