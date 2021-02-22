@@ -11,9 +11,11 @@ class ViewController: UIViewController {
 
     var name = "坂本"
     
+    @IBOutlet weak var label: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        label.text = name
     }
 
     
