@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     var name = "坂本"
+    @IBOutlet weak var textField: UITextField!
     
     @IBOutlet weak var label: UILabel!
     override func viewDidLoad() {
@@ -19,7 +20,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func changeButton(_ sender: Any) {
-        name = "sakamoto"
+        let content = textField.text ?? "記入してください"
+        label.text = content
     }
     
 
